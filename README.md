@@ -40,5 +40,7 @@ make
 
 ## TODO
 - [ ] Remove hard code of camera name
-- [ ] Generic GeniCAM interface? (Harvester or Aravis)
 - [ ] Extend frame grabbing logic, [like the image pipe line in ros](https://github.com/ros-perception/image_pipeline/tree/melodic/camera_calibration).
+- [ ] Generic GeniCAM interface? (Harvester or Aravis)
+- [ ] Allow the calibration model to be configured? Refer to https://docs.opencv.org/4.4.0/d9/d0c/group__calib3d.html#ga3207604e4b1a1758aa66acb6ed5aa65d, currently hard coded standard 5 param model.
+- [ ] Allow the camera model to configured? Currently uses pin hole camera, opencv supports fisheyed models.
