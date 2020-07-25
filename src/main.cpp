@@ -166,6 +166,7 @@ void calibratePoints(cv::Size boardSize, double squareSize, cv::Size imageSize, 
     fs.writeComment(commentString.str());
     fs << "cameraMatrix" << cameraMatrix;
     fs << "distCoeffs" << distCoeffs;
+    fs << "calibImageSize" << imageSize;
     fs.release();
 
     std::cout << "Saved to " << outputPath << std::endl;
